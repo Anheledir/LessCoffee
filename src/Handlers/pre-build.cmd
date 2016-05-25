@@ -15,8 +15,14 @@ pushd "%~dp0\nodejs"
 set zip="%~dp0..\..\tools\7-zip\7z.exe"
 
 if not exist node.exe (
-    echo Downloading node ...
-    cscript //nologo %HTTPGET_JS% http://nodejs.org/dist/latest/node.exe node.exe
+	if %PROCESSOR_ARCHITECTURE%==x86 (
+		echo Downloading node for 32-Bit system...
+		cscript //nologo %HTTPGET_JS% http://nodejs.org/dist/latest/win-x86/node.exe node.exe
+	) else (
+		echo Downloading node for 64-Bit system...
+		cscript //nologo %HTTPGET_JS% http://nodejs.org/dist/latest/win-x64/node.exe node.exe
+	)
+    
 )
 
 if not exist npm.cmd (

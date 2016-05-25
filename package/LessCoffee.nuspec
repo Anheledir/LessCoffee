@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>LessCoffee</id>
-        <version>2.0.0.0</version>
-        <authors>Duncan Smart</authors>
+        <id>LessCoffee.Anheledir</id>
+        <version>2.6.0.0</version>
+        <authors>Gordon Breuer</authors>
         <owners>Duncan Smart</owners>
-        <projectUrl>https://github.com/duncansmart/LessCoffee</projectUrl>
-        <iconUrl>https://github.com/duncansmart/LessCoffee/blob/master/package/lesscoffee-logo-32.png?raw=true</iconUrl>
+        <projectUrl>https://github.com/Anheledir/LessCoffee</projectUrl>
+        <iconUrl>https://github.com/Anheledir/LessCoffee/blob/master/package/lesscoffee-logo-32.png?raw=true</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>HTTP handlers that transform *.less and *.coffee files into CSS and JavaScript resepectively on the fly.</description>
+        <description>HTTP handlers that transform *.less and *.coffee files into CSS and JavaScript resepectively on the fly. Includes updated version of node.js V6.2.0</description>
         <tags>less css javascript coffeescript</tags>
         <dependencies>
             <dependency id="AjaxMin" version="4.0.0.0" />
